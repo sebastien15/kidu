@@ -1,0 +1,84 @@
+/* Home Page Styles */
+
+.oe_structure {
+  width: 100%;
+}
+
+.s_cover {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.o_we_bg_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.o_we_shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.s_allow_columns {
+  position: relative;
+  z-index: 3;
+}
+
+.s_text_image {
+  position: relative;
+}
+
+.s_numbers_grid {
+  position: relative;
+}
+
+.o_grid_mode {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.o_grid_item {
+  padding: var(--grid-item-padding-y, 16px) var(--grid-item-padding-x, 16px);
+}
+
+.s_mockup_image {
+  position: relative;
+}
+
+.s_comparisons {
+  position: relative;
+}
+
+.s_card {
+  transition: transform 0.3s ease;
+}
+
+.s_card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .o_grid_mode {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  
+  .o_grid_item {
+    grid-area: auto !important;
+  }
+} 

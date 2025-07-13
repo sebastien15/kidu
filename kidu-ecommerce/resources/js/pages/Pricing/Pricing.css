@@ -1,0 +1,126 @@
+/* Pricing Page Styles */
+
+.s_title.parallax {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s_parallax_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.o_we_bg_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.s_title .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Pricing Cards */
+.s_card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #dee2e6;
+}
+
+.s_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.h2-fs {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.card-text {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.list-group-item {
+  border: none;
+  padding: 0.5rem 0;
+  color: #495057;
+}
+
+.list-group-item i {
+  margin-right: 0.5rem;
+  width: 16px;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+.card-footer small {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+/* Button Styles */
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .h2-fs {
+    font-size: 2rem;
+  }
+  
+  .s_card {
+    margin-bottom: 2rem;
+  }
+  
+  .gap-4 {
+    gap: 1.5rem !important;
+  }
+} 
